@@ -1,0 +1,56 @@
+C:\Users\pauld\Desktop\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.exe.config
+C:\Users\pauld\Desktop\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.exe
+C:\Users\pauld\Desktop\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.pdb
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.csprojAssemblyReference.cache
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\MainWindow.g.cs
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\App.g.cs
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3_MarkupCompile.cache
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3_MarkupCompile.lref
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\MainWindow.baml
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.g.resources
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.Properties.Resources.resources
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.csproj.GenerateResource.cache
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.exe
+C:\Users\pauld\Desktop\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.pdb
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.exe.config
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.exe
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.pdb
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.csprojAssemblyReference.cache
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\MainWindow.g.cs
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\App.g.cs
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3_MarkupCompile.cache
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3_MarkupCompile.lref
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\MainWindow.baml
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.g.resources
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.Properties.Resources.resources
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.csproj.GenerateResource.cache
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.exe
+C:\Users\pauld\Desktop\2020\COMP.6211\Week 3 TO DO\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.pdb
+H:\Data Structures and Algo\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.exe.config
+H:\Data Structures and Algo\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.exe
+H:\Data Structures and Algo\AlgorithmsStage3\bin\Debug\AlgorithmsStage3.pdb
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.csprojAssemblyReference.cache
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\MainWindow.g.cs
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\App.g.cs
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3_MarkupCompile.cache
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3_MarkupCompile.lref
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\MainWindow.baml
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.g.resources
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.Properties.Resources.resources
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.csproj.GenerateResource.cache
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.exe
+H:\Data Structures and Algo\AlgorithmsStage3\obj\Debug\AlgorithmsStage3.pdb
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\bin\Debug\AlgorithmsStage3.exe.config
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\bin\Debug\AlgorithmsStage3.exe
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\bin\Debug\AlgorithmsStage3.pdb
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3.csprojAssemblyReference.cache
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\MainWindow.g.cs
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\App.g.cs
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3_MarkupCompile.cache
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3_MarkupCompile.lref
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\MainWindow.baml
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3.g.resources
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3.Properties.Resources.resources
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3.csproj.GenerateResource.cache
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3.exe
+C:\Users\Aguil\Desktop\Derick\TOI-OHOMAI\Data Structures and Algorithms\Algo3\obj\Debug\AlgorithmsStage3.pdb
