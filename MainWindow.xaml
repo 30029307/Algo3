@@ -11,15 +11,17 @@
             <ImageBrush ImageSource="sea.png" Opacity="0.70"/>
         </Grid.Background>
         <Image x:Name="testImage1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="291,200,0,0"  Width="40" Source="Picture3.png" Stretch="Fill" />
-        <Image x:Name="testImage2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
-       Margin="50,50,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
-
-        <Image x:Name="testImage3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
-       Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
-
-        <Image x:Name="testImage4" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40"  
-       Margin="150,200,0,0"  Width="40" Source="Picture2.png" Stretch="Fill" />
-
+        <Image x:Name="testImage2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="50,50,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+        <Image x:Name="testImage3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+        <Image x:Name="imageMainFollow" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="150,200,0,0"  Width="40" Source="Picture2.png" Stretch="Fill" />
+        <Image x:Name="testImage5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+        <Image x:Name="testImage6" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+        <Image x:Name="testImage7" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+        <Image x:Name="testImage8" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+        <Image x:Name="testImage9" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+        <Image x:Name="testImage10" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Margin="100,350,0,0"  Width="40" Source="Picture1.png" Stretch="Fill" />
+           
+            
 
 
     </Grid>

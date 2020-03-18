@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Media;
 
 namespace AlgorithmsStage3
 {
@@ -38,12 +39,28 @@ namespace AlgorithmsStage3
 
         Random rand;
         int ctr = 0;
+        bool startAnim = false;
+        int anim = 0;
+
+        Image[] myImageArray;
 
         #endregion
 
         public MainWindow()
         {
             InitializeComponent();
+
+            myImageArray = new Image[10] { 
+                testImage1,
+                testImage2,
+                testImage3,
+                testImage4,
+                testImage5,
+                testImage6,
+                testImage7,
+                testImage8,
+                testImage9,
+                testImage10};
 
             #region Random Number
 
@@ -63,6 +80,7 @@ namespace AlgorithmsStage3
         /// </summary>
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
+            rand = new Random(DateTime.Now.Millisecond);
             
             #region Move using a key press
             Utils.Move(testImage1, flagA, flagD, flagW, flagS, 5.00);
@@ -76,7 +94,7 @@ namespace AlgorithmsStage3
 
             #region Move_Lock_To_Grid
 
-            Utils.Move_Lock_To_Grid(testImage1,TestGrid,1.5,ref testFlag1X,ref testFlag1Y,rand,ref ctr);
+            Utils.Move_Lock_To_Grid(testImage1,TestGrid,(10/(double)rand.Next(1,20) + 2),ref testFlag1X,ref testFlag1Y,rand,ref ctr);
 
 
 
@@ -84,22 +102,22 @@ namespace AlgorithmsStage3
 
             #region Follow
 
-            Utils.Follow(testImage2,testImage4,2);
-            Utils.Follow(testImage3, testImage4, 1.5);
+            Utils.Follow(testImage2,testImage4, (10 / (double)rand.Next(1, 20) + 2));
+            Utils.Follow(testImage3, testImage4, (10 / (double)rand.Next(1, 21) + 1));
             #endregion
 
             #region Runaway
             Utils.Follow(testImage4, testImage1, 1.60);
             Utils.RunAway(testImage4, testImage1, 2.0);
             Utils.Lock_To_Grid(testImage4, TestGrid);
-            
+
 
             #endregion
 
             #region Collide
 
-            // Add code here
-
+            Utils.Collide(testImage2,testImage1,ref testFlag1X,ref testFlag1Y,ref startAnim);
+            Utils.Collide(testImage3,testImage1,ref testFlag1X, ref testFlag1Y,ref startAnim);
             #endregion
 
             #region Random Number
@@ -107,6 +125,8 @@ namespace AlgorithmsStage3
             // Add code here
 
             #endregion
+
+            Utils.Anim(testImage1,ref startAnim,ref anim);
 
         }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
 
 // Include for the image and grid objects
 using System.Windows;
@@ -109,7 +110,7 @@ namespace AlgorithmsStage3
                 testFlag1Y = !testFlag1Y;
             }
 
-         
+
 
             ctr++;
             Console.WriteLine(ctr);
@@ -120,9 +121,8 @@ namespace AlgorithmsStage3
                 ctr = 0;
             }
 
-          
-            // Console.WriteLine(duration + "duration");
-            
+
+
             if (testFlag1X) leftMargin += speed;
             if (!testFlag1X) leftMargin -= speed;
             if (testFlag1Y) topMargin += speed;
@@ -174,7 +174,7 @@ namespace AlgorithmsStage3
         public static void RunAway(Image anImage, Image target, double speed)
         {
 
-            double distance = 50;
+            double distance = 150;
 
             double leftMargin = anImage.Margin.Left;
             double rightMargin = anImage.Margin.Right;
@@ -201,8 +201,58 @@ namespace AlgorithmsStage3
 
         #region Collide
 
-        // Add code here
+        public static void Collide(Image anImage, Image target,ref bool testFlag1X,ref bool testFlag1Y,ref bool startAnim)
+        {
 
+            if ((anImage.Margin.Left + anImage.Width) > target.Margin.Left && anImage.Margin.Left < (target.Margin.Left + target.Width) &&
+                  (anImage.Margin.Top + anImage.Height) > target.Margin.Top && anImage.Margin.Top < (target.Margin.Top + target.Height))
+            {
+                
+
+                if (anImage.Visibility != Visibility.Hidden)
+                {
+                    testFlag1X = !testFlag1X;
+                    testFlag1Y = !testFlag1Y;
+                    anImage.Visibility = Visibility.Hidden;
+                    target.Opacity -= 0.10;
+                    target.Width += 10;
+                    target.Height += 10;
+                    
+                    startAnim = true;
+                    SoundPlayer sound = new SoundPlayer(Properties.Resources.sound);
+                    sound.Play();
+                    Console.WriteLine("BOOOOOOOOOOOM PARANG NENENG B KANYANG KATAWAN");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("bat ayaw mo lumapit sa akin crush");
+            }
+        }
+
+
+        public static void Anim(Image anImage,ref bool startAnim, ref int anim)
+        {
+
+            if (startAnim)
+            {
+                anim++;
+                if (anim > 10) anImage.Visibility = Visibility.Hidden;
+                if (anim > 20) anImage.Visibility = Visibility.Visible;
+                if (anim > 30) anImage.Visibility = Visibility.Hidden;
+                if (anim > 40) anImage.Visibility = Visibility.Visible;
+                if (anim > 50) anImage.Visibility = Visibility.Hidden;
+                if (anim > 60)
+                {
+                    anImage.Visibility = Visibility.Visible;
+                    anim = 0;
+                    startAnim = false;
+                }
+
+            }
+
+        }
         #endregion
 
 
