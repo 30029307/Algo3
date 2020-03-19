@@ -152,7 +152,7 @@ namespace AlgorithmsStage3
             double bottomMargin = anImage.Margin.Bottom;
 
             if (leftMargin + anImage.Width < target.Margin.Left ) leftMargin += speed;
-            else
+            
             if (leftMargin > target.Margin.Left + target.Width ) leftMargin -= speed;
 
             if (topMargin + anImage.Height < target.Margin.Top ) topMargin += speed;
@@ -174,7 +174,7 @@ namespace AlgorithmsStage3
         public static void RunAway(Image anImage, Image target, double speed)
         {
 
-            double distance = 150;
+            double distance =200;
 
             double leftMargin = anImage.Margin.Left;
             double rightMargin = anImage.Margin.Right;
@@ -201,35 +201,36 @@ namespace AlgorithmsStage3
 
         #region Collide
 
-        public static void Collide(Image anImage, Image target,ref bool testFlag1X,ref bool testFlag1Y,ref bool startAnim)
+        public static void Collide(Image[] anImage, Image target, ref bool testFlag1X, ref bool testFlag1Y, ref bool startAnim)
         {
-
-            if ((anImage.Margin.Left + anImage.Width) > target.Margin.Left && anImage.Margin.Left < (target.Margin.Left + target.Width) &&
-                  (anImage.Margin.Top + anImage.Height) > target.Margin.Top && anImage.Margin.Top < (target.Margin.Top + target.Height))
-            {
-                
-
-                if (anImage.Visibility != Visibility.Hidden)
+            for (int i = 2; i < anImage.Length; i++) {
+                if ((anImage[i].Margin.Left + anImage[i].Width) > target.Margin.Left && anImage[i].Margin.Left < (target.Margin.Left + target.Width) &&
+                      (anImage[i].Margin.Top + anImage[i].Height) > target.Margin.Top && anImage[i].Margin.Top < (target.Margin.Top + target.Height))
                 {
-                    testFlag1X = !testFlag1X;
-                    testFlag1Y = !testFlag1Y;
-                    anImage.Visibility = Visibility.Hidden;
-                    target.Opacity -= 0.10;
-                    target.Width += 10;
-                    target.Height += 10;
-                    
-                    startAnim = true;
-                    SoundPlayer sound = new SoundPlayer(Properties.Resources.sound);
-                    sound.Play();
-                    Console.WriteLine("BOOOOOOOOOOOM PARANG NENENG B KANYANG KATAWAN");
-                }
 
+
+                    if (anImage[i].Visibility != Visibility.Hidden)
+                    {
+                        testFlag1X = !testFlag1X;
+                        testFlag1Y = !testFlag1Y;
+                        anImage[i].Visibility = Visibility.Hidden;
+                        //target.Opacity -= 0.10;
+                        target.Width += 10;
+                        target.Height += 10;
+
+                        startAnim = true;
+                        SoundPlayer sound = new SoundPlayer(Properties.Resources.sound);
+                        sound.Play();
+                        Console.WriteLine("BOOOOOOOOOOOM PARANG NENENG B KANYANG KATAWAN");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("bat ayaw mo lumapit sa akin crush");
+                }
+                }
             }
-            else
-            {
-                Console.WriteLine("bat ayaw mo lumapit sa akin crush");
-            }
-        }
 
 
         public static void Anim(Image anImage,ref bool startAnim, ref int anim)

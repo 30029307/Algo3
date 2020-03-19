@@ -50,7 +50,9 @@ namespace AlgorithmsStage3
         {
             InitializeComponent();
 
-            myImageArray = new Image[10] { 
+            myImageArray = new Image[12] { 
+                imageMain,
+                imageMainFollow,
                 testImage1,
                 testImage2,
                 testImage3,
@@ -61,8 +63,15 @@ namespace AlgorithmsStage3
                 testImage8,
                 testImage9,
                 testImage10};
-				
-				//ahaha
+
+            rand = new Random(DateTime.Now.Millisecond);
+
+            for (int i = 2; i < myImageArray.Length; i++) {
+                myImageArray[i].Width = rand.Next(20, 40);
+                myImageArray[i].Height = myImageArray[i].Width;
+                //myImageArray[i].Margin.Left = rand.Next(0,(double)TestGrid.Width);
+               // myImageArray[i].Margin.Top = rand.Next(0, (double)TestGrid.Height);
+            }
 
             #region Random Number
 
@@ -96,31 +105,41 @@ namespace AlgorithmsStage3
 
             #region Move_Lock_To_Grid
 
-            Utils.Move_Lock_To_Grid(testImage1,TestGrid,(10/(double)rand.Next(1,20) + 2),ref testFlag1X,ref testFlag1Y,rand,ref ctr);
-
+            Utils.Move_Lock_To_Grid(myImageArray[0],TestGrid,(10 / rand.Next(1,20)+ 2),ref testFlag1X,ref testFlag1Y,rand,ref ctr);
 
 
             #endregion
 
             #region Follow
 
-            Utils.Follow(testImage2,testImage4, (10 / (double)rand.Next(1, 20) + 2));
-            Utils.Follow(testImage3, testImage4, (10 / (double)rand.Next(1, 21) + 1));
+           // Utils.Follow(testImage2,testImage4, (10 / (double)rand.Next(1, 20) + 2));
+            //Utils.Follow(testImage3, testImage4, (10 / (double)rand.Next(1, 21) + 1));
+
+            for (int i = 2; i < myImageArray.Length; i++) {
+                Utils.Follow(myImageArray[i], myImageArray[rand.Next(1,myImageArray.Length)], (10 / (double)rand.Next(1, 21) + 5));
+                Utils.RunAway(myImageArray[i],myImageArray[rand.Next(1,myImageArray.Length)], (10 / (double)rand.Next(1, 21) + 5));
+            }
+
+
             #endregion
 
             #region Runaway
-            Utils.Follow(testImage4, testImage1, 1.60);
-            Utils.RunAway(testImage4, testImage1, 2.0);
-            Utils.Lock_To_Grid(testImage4, TestGrid);
+            Utils.Follow(myImageArray[1], myImageArray[0], 2);
+            Utils.RunAway(myImageArray[1], myImageArray[0], 3);
+            Utils.Lock_To_Grid(myImageArray[1], TestGrid);
 
 
             #endregion
 
             #region Collide
 
-            Utils.Collide(testImage2,testImage1,ref testFlag1X,ref testFlag1Y,ref startAnim);
-            Utils.Collide(testImage3,testImage1,ref testFlag1X, ref testFlag1Y,ref startAnim);
-            #endregion
+
+
+
+            
+                Utils.Collide(myImageArray, myImageArray[0], ref testFlag1X, ref testFlag1Y, ref startAnim);
+            
+                #endregion
 
             #region Random Number
 
